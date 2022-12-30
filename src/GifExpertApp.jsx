@@ -1,9 +1,6 @@
 import { useState } from "react"
-<<<<<<< HEAD
 import AddCategory from "./components/AddCategory"
-=======
 import GifGrid from "./components/GifGrid"
->>>>>>> main
 
 const GifExpertApp = () => {
 	const [categories, setCategories] = useState(["drag0n ball", "smile"])
