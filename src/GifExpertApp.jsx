@@ -4,13 +4,7 @@ import GifGrid from "./components/GifGrid"
 
 const GifExpertApp = () => {
 	const [categories, setCategories] = useState(["drag0n ball", "smile"])
-	//const [inputValue, setInputValue]=useState('')
-	/*const addNewCategory = () => {
-		setCategories([
-			...categories,
-			"hello"
-		])
-	}*/
+	
 
 
 	const onAddNewCategory= (newCategory) => {
@@ -19,15 +13,6 @@ const GifExpertApp = () => {
 
 	}
 
-	/*const onSubmit = (e) => {
-		e.preventDefault()
-		if(inputValue.trim().length <= 1)return 
-		setCategories([
-			...categories,
-			inputValue
-		])
-		setInputValue('')
-	}*/
   return (
 	<>
 	<h2>GifExpertApp</h2>
