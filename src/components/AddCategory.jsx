@@ -9,7 +9,8 @@ const AddCategory = ({onNewCategory}) => {
 
 	const onSubmit = (e) => {
 		e.preventDefault()
-		if(inputValue.trim().length >= 1) return
+	
+		if(inputValue.trim().length <= 1) return
 		onNewCategory(inputValue.trim())
 		setInputValue('')
 	}
@@ -23,8 +24,9 @@ const AddCategory = ({onNewCategory}) => {
 			value={inputValue}
 			onChange={handleValue}
 		/>
-		<button onClick={onSubmit}>Buscar</button>
+		<button >Buscar</button>
 		<button>Busqueda avanzada</button>
+		<input type="submit" onClick={onSubmit}/>
 	</form>)
 }
 
